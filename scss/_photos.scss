@@ -1,0 +1,226 @@
+.header_bg {
+  background-color: rgba(0, 0, 0, 0.692);
+  width: 100%;
+  height: 88px;
+}
+
+.modal_photo {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.884);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  z-index: 40;
+
+  &__close {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    &:hover {
+      cursor: pointer;
+      i {
+        color: rgba(255, 255, 255, 0.466);
+      }
+    }
+    i {
+      color: #fff;
+      font-size: 40px;
+      pointer-events: none;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 1%;
+    // left: 3%;
+    display: flex;
+    justify-content: center;
+    width: 90%; // 80%
+    margin: auto;
+    height: 98%;  // 90%
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+.modal_photo_db {
+  display: block;
+}
+.photos {
+  padding: 20px 0;
+  &__title {
+    font-size: 60px;
+    font-weight: 900;
+    color: red;
+    text-align: center;
+  }
+
+  &__blur {
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    width: 100%;
+    height: 200px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      &::after {
+        transform: translateX(300px);
+      }
+    }
+    &::after {
+      content: "";
+      transition: 500ms;
+
+      display: block;
+      background-color: rgba(0, 0, 0, 0.664);
+      color: rgb(230, 25, 25);
+      width: 100%;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      transform: translateX(0px);
+    }
+  }
+
+  &__first {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 20% 13% 17% 15% 1fr;
+    // column-gap: 1%;
+    gap: 0.2%;
+    justify-content: center;
+  }
+  &__second {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 15% 17% 15% 13% 1fr;
+    gap: 0.2%;
+    justify-content: center;
+  }
+  &__third {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 13% 17% 15% 20% 15% 1fr;
+    gap: 0.2%;
+    justify-content: center;
+  }
+}
+
+
+
+
+.vinetka {
+
+  padding: 20px 0;
+
+  $carousel_width: 90vw; // 70vw custom : in px or vw/vh please!
+  $carousel_height: 450px; // 350px custom : in px or vw/vh please!
+  $carousel_item_width: $carousel_width/5; //20%
+  $carousel_item_height: $carousel_height - $carousel_height * 0.2;
+  .carousel {
+      width: 100%;
+      // border: 1px solid rgba(78, 78, 78, 0.404);
+      // height: $carousel_height;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .carousel-items {
+          overflow: hidden;
+          position: relative;
+          width: $carousel_width;
+          height: $carousel_height;
+          .carousel-item {
+              position: absolute;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              transition: 270ms;
+              width: $carousel_item_width;
+              height: $carousel_item_height;
+              // background-color: sandybrown;
+              &.active {
+                  width: $carousel_item_width + $carousel_item_width*0.5;
+                  height: $carousel_item_height + ($carousel_height - $carousel_item_height);
+              }
+              img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+              }
+          }
+      }
+      .carousel-items-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #524f4f;
+  
+        &:hover {
+          background-color: #81d100;
+          border: none;
+          i {
+            color: #fff;
+          }
+        }
+  
+        i {
+          font-size: 24px;
+          color: #524f4f;
+          pointer-events: none;
+        }
+        cursor: pointer;
+        &.arrow-prev {
+          left: -8%;
+          top: 45%;
+        }
+        &.arrow-next {
+          right: -8%;
+          top: 45%;
+        }
+      }
+  }
+}
+
+
+
+
+
+@media (max-width: 425px) {
+  
+  .photos__title {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .vinetka .carousel .carousel-items .carousel-item{
+    visibility: hidden;
+  }
+  .vinetka .carousel .carousel-items .carousel-item.active{
+    width: 80%;
+    visibility: visible;
+  }
+
+  $carousel_width: 10vw; // 70vw custom : in px or vw/vh please!
+  $carousel_height: 450px;
+
+
+}

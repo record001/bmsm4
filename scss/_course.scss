@@ -1,0 +1,138 @@
+.course {
+  background: url(../images/playing_piano.webp) no-repeat center / cover;
+  height: 505px;
+
+  &__blur {
+    background-color: #3f3c37de;
+    height: 100%;
+  }
+
+  &__body {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 20% 75%;
+    column-gap: 3%;
+    justify-content: center;
+  }
+
+  &__menu {
+    li {
+      border: 1px solid #000;
+      width: 90%;
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      background-color: rgb(171, 207, 200);
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid rgb(171, 207, 200);
+        a {
+          color: #fff;
+        }
+      }
+      a {
+        color: #000;
+        font-size: 18px;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__info {
+    display: none;
+    grid-template-columns: 55% 40%;
+    column-gap: 3%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info_img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info_text {
+    h2 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #fff;
+      line-height: 23px;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      color: #fff;
+      line-height: 23px;
+    }
+
+    h5 {
+      color: gold;
+      margin-top: 10px;
+      font-size: 22px;
+    }
+  }
+}
+
+.dgrid {
+  display: grid;
+}
+
+@media (max-width: 425px) {
+  .course__info {
+    grid-template-columns: 90%;
+  }
+
+  .course__menu li a {
+    font-size: 10px;
+  }
+
+  .course__menu li {
+    text-align: center;
+  }
+
+  .course__info_text h2 {
+    font-size: 20px;
+    margin-bottom: 13px;
+  }
+  .course__info_text p {
+    line-height: 18px;
+    font-size: 13px;
+  }
+
+  .course__info_text h3 {
+    font-size: 20px;
+  }
+  .course__info_text li {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .course__info_text h5 {
+    font-size: 14px;
+}
+.course__info_img img {
+  display: none;
+}
+
+.course__body {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  column-gap: 0%;
+}
+
+
+}

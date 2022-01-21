@@ -1,0 +1,254 @@
+.top {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  background: url(../images/teacher/top_bg.webp) no-repeat center / cover;
+  padding: 50px 0;
+
+  &__title {
+    font-size: 60px;
+    font-weight: 900;
+    color: red;
+    text-align: center;
+  }
+}
+
+.about_teachers {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 5px;
+  box-shadow: 0px 0px 14px #000;
+  border-radius: 5px;
+
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.teachMenu {
+  margin-top: 20px;
+  padding: 20px 0;
+  background-color: #fafafa;
+
+  .dCard {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    .qodirov {
+      width: 60%;
+      height: 400px;
+      margin: 0 auto;
+
+      background: url(../images/teacher/qodirovH.jpg) no-repeat center / cover;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    h2 {
+      margin-bottom: 50px;
+      span {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .course_name {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    text-transform: uppercase;
+  }
+
+  .tCard {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 25% 40%;
+    column-gap: 5%;
+    justify-content: center;
+
+    // fortepiano
+    .olga {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/OlgaM1.jpg) no-repeat center / cover;
+    }
+    .funk {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/funk.jpg) no-repeat center / cover;
+    }
+    .maxliyo {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/MaxliyoM.jpg) no-repeat center / cover;
+    }
+    .xolnazarov_A {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/xolnazarovA.jpg) no-repeat center /
+        cover;
+    }
+    .asqar {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/asqarF.jpg) no-repeat center / cover;
+    }
+    .alimqul {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/alimqul.jpg) no-repeat center / cover;
+    }
+    .asilbek {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/asilbek.jpg) no-repeat center / cover;
+    }
+    .farrux {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/farrux.jpg) no-repeat center / cover;
+    }
+    .shuxrat {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/shuxrat.jpg) no-repeat center / cover;
+    }
+
+    .irina {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/irina.jpg) no-repeat center / cover;
+    }
+    .mashrab {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/mashrabV.jpg) no-repeat center / cover;
+    }
+    .shaxlo {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/shaxloE.jpg) no-repeat center /cover;
+    }
+    .bobur {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/bobur.jpg) no-repeat center / cover;
+    }
+    .diyorbek {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/diyorbekA.jpg) no-repeat center / cover;
+    }
+    .hayitjon {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/hayitjonA.jpg) no-repeat center / cover;
+    }
+    .shaxriyor {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/shaxriyorD.jpg) no-repeat center / cover;
+    }
+    .behruz {
+      height: 300px;
+      box-shadow: 0 0 14px rgb(16, 3, 63);
+      border-radius: 5px;
+      background: url(../images/teacher/bexruz.jpg) no-repeat center / cover;
+    }
+
+    h2 {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    p {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: 19px;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .top__title {
+    font-size: 40px;
+  }
+  #up {
+    right: 20px;
+  }
+
+  .about_teachers {
+    width: 80%;
+  }
+
+  .teachMenu .dCard .qodirov {
+    width: 80%;
+  }
+
+  .teachMenu .dCard {
+    width: 100%;
+  }
+  .teachMenu .dCard p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .teachMenu .dCard h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .teachMenu .dCard h2 span {
+    font-size: 13px;
+  }
+
+  .teachMenu .tCard {
+    grid-template-columns: 60%;
+  }
+  .teachMenu .tCard h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .teachMenu .tCard p {
+    font-size: 15px;
+  }
+
+  .teachMenu .course_name {
+    font-size: 25px;
+  }
+
+  .modal__list {
+    width: 60%;
+  }
+}

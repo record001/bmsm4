@@ -1,0 +1,147 @@
+.about {
+  background-color: #f1edea;
+
+  &__body {
+    position: relative;
+    padding-top: 250px;
+    padding-bottom: 20px;
+  }
+  &__text {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.815);
+  }
+
+  &__main_img {
+    background-image: url(../images/school.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -18%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 40%;
+    height: 300px;
+    box-shadow: 0px 0px 23px #000;
+    border-radius: 10px;
+  }
+
+  &__img1 {
+    background-image: url(../images/raqs.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    top: 10%;
+    left: 0%;
+    width: 20%;
+    height: 150px;
+    box-shadow: 0px 0px 23px #000;
+    border-radius: 10px;
+  }
+  &__img2 {
+    background-image: url(../images/raqs1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    top: 10%;
+    right: 0;
+    width: 20%;
+    height: 150px;
+    box-shadow: 0px 0px 23px #000;
+    border-radius: 10px;
+  }
+  &__img3 {
+    background-image: url(../images/raqs2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    top: 60%;
+    left: -7%;
+    width: 20%;
+    height: 150px;
+    box-shadow: 0px 0px 23px #000;
+    border-radius: 10px;
+  }
+  &__img4 {
+    background-image: url(../images/raqs3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+
+    top: 60%;
+    right: -6%;
+    width: 20%;
+    height: 150px;
+    box-shadow: 0px 0px 23px #000;
+    border-radius: 10px;
+  }
+
+  .photos {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    background-color: skyblue;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid skyblue;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+
+    &:hover {
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.637);
+    }
+
+   
+  }
+}
+
+
+
+@media (max-width: 425px) {
+  .about__main_img {
+    top: -3%;
+    width: 85%;
+  }
+
+  .about__img1 {
+    display: none;
+  }
+  .about__img2 {
+    display: none;
+  }
+  .about__img3 {
+    display: none;
+  }
+  .about__img4 {
+    display: none;
+  }
+
+  .about__body {
+    padding-top: 275px;
+  }
+
+  .about__text {
+    margin-top: 10px;
+    width: 85%;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+
+}
