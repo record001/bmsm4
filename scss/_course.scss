@@ -15,14 +15,16 @@
     justify-content: center;
   }
 
-  &__menu {
-    li {
+  
+
+  &__item {
+    
       border: 1px solid #000;
       width: 90%;
       padding: 5px;
       border-radius: 5px;
       margin-bottom: 5px;
-      background-color: rgb(171, 207, 200);
+      background-color: rgba(99, 124, 119, 0.664);
       &:hover {
         cursor: pointer;
         background-color: transparent;
@@ -36,7 +38,7 @@
         font-size: 18px;
         pointer-events: none;
       }
-    }
+    
   }
 
   &__info {
@@ -89,6 +91,15 @@
 
 .dgrid {
   display: grid;
+}
+
+.course_active {
+  background-color: rgba(0, 0, 0, 0.199);
+  border: 1px solid rgb(171, 207, 200);
+
+  a {
+    color: #fff;
+  }
 }
 
 @media (max-width: 425px) {

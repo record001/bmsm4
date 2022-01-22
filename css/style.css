@@ -561,26 +561,26 @@ a {
           justify-content: center;
 }
 
-.course__menu li {
+.course__item {
   border: 1px solid #000;
   width: 90%;
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 5px;
-  background-color: #abcfc8;
+  background-color: rgba(99, 124, 119, 0.664);
 }
 
-.course__menu li:hover {
+.course__item:hover {
   cursor: pointer;
   background-color: transparent;
   border: 1px solid #abcfc8;
 }
 
-.course__menu li:hover a {
+.course__item:hover a {
   color: #fff;
 }
 
-.course__menu li a {
+.course__item a {
   color: #000;
   font-size: 18px;
   pointer-events: none;
@@ -638,6 +638,15 @@ a {
 .dgrid {
   display: -ms-grid;
   display: grid;
+}
+
+.course_active {
+  background-color: rgba(0, 0, 0, 0.199);
+  border: 1px solid #abcfc8;
+}
+
+.course_active a {
+  color: #fff;
 }
 
 @media (max-width: 425px) {
