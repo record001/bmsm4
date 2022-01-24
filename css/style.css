@@ -959,8 +959,8 @@ a {
     font-size: 13px;
   }
   .teachMenu .tCard {
-    -ms-grid-columns: 60%;
-        grid-template-columns: 60%;
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
   }
   .teachMenu .tCard h2 {
     margin-bottom: 15px;
