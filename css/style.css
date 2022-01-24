@@ -1205,7 +1205,7 @@ a {
   .contact__location {
     width: 60%;
   }
-  .contact__location h4 {
+  .contact__location p {
     font-size: 13px;
   }
   .contact__phone {
@@ -1471,6 +1471,21 @@ a {
   .photos__title {
     font-size: 25px;
     font-weight: 500;
+  }
+  .photos__blur::after {
+    display: none;
+  }
+  .photos__first {
+    -ms-grid-columns: 33% 33% 1fr;
+        grid-template-columns: 33% 33% 1fr;
+  }
+  .photos__second {
+    -ms-grid-columns: 33% 33% 1fr;
+        grid-template-columns: 33% 33% 1fr;
+  }
+  .photos__third {
+    -ms-grid-columns: 33% 33% 1fr;
+        grid-template-columns: 33% 33% 1fr;
   }
   .vinetka .carousel .carousel-items .carousel-item {
     visibility: hidden;
